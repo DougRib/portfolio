@@ -2,20 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer components {
+    .nav__link {
+        @apply relative text-base font-medium w-fit block after:block after:content-[""]
+        after:absolute after:h-[3px] after:bg-[#efc12b] text-white after:w-full after:scale-x-0 after:hover:scale-x-100
+        after:transition after:duration-300 after:origin-right
+    }
+    .text-bg {
+        background-image: linear-gradient(to right, #efc12b 0%, #ffffff 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .button-rotate {
+        border: 4px solid transparent;
+        border-image: linear-gradient(to right, blue, blue) 1;
+        animation: border-move 3s infinite linear;
+        padding: 0.5rem 1rem;
+        outline: none;
+        transition: border-color 0.5s ease-in-out;
+      }
+      
+      .button-rotate:hover {
+        animation: border-move 3s infinite linear, border-hover-color 3s infinite linear;
+      }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes border-move {
+    0% {
+      border-image: linear-gradient(to right, blue, blue) 1;
+    }
+    25% {
+      border-image: linear-gradient(to bottom, blue, blue) 1;
+    }
+    50% {
+      border-image: linear-gradient(to left, blue, blue) 1;
+    }
+    75% {
+      border-image: linear-gradient(to top, blue, blue) 1;
+    }
+    100% {
+      border-image: linear-gradient(to right, blue, blue) 1;
+    }
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  
+  @keyframes border-hover-color {
+    0% {
+      border-image: linear-gradient(to right, green, green) 1;
+    }
+    25% {
+      border-image: linear-gradient(to bottom, green, green) 1;
+    }
+    50% {
+      border-image: linear-gradient(to left, green, green) 1;
+    }
+    75% {
+      border-image: linear-gradient(to top, green, green) 1;
+    }
+    100% {
+      border-image: linear-gradient(to right, green, green) 1;
+    }
+  }
+  
