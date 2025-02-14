@@ -9,7 +9,7 @@ const About = () => {
     <div className="pt-16 pb-16 bg-[#202224]">
       <SectionHeading>About Me</SectionHeading>
       <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-1 gap-8 items-center mt-20">
-        <div >
+        <div data-aos="fade-left" data-aos-anchor-placement="top-center" >
           <h1 className="text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
             {AboutInfo.title}
           </h1>
@@ -47,13 +47,18 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-16 items-center lg:mx-auto">
+        <div
+          data-aos="zoom-in" 
+          data-aos-anchor-placement="top-center"
+          data-aos-delay="150" 
+          className="grid grid-cols-2 gap-16 items-center lg:mx-auto"
+        >
           <div>
             <Image className="mx-auto"
-              src="/about.jpg"
+              src="/images/customer.png"
               alt="About Me"
-              width={400}
-              height={400}
+              width={80}
+              height={80}
             />
             <p className="mt-3 font-bold text-xl text-white text-center">
               {AboutInfo.client}
@@ -64,10 +69,10 @@ const About = () => {
           </div>
           <div>
             <Image className="mx-auto"
-              src="/about.jpg"
+              src="/images/experience.png"
               alt="About Me"
-              width={400}
-              height={400}
+              width={80}
+              height={80}
             />
             <p className="mt-3 font-bold text-xl text-white text-center">
               {AboutInfo.experience}
@@ -78,10 +83,10 @@ const About = () => {
           </div>
           <div>
             <Image className="mx-auto"
-              src="/about.jpg"
+              src="/images/completed.png"
               alt="About Me"
-              width={400}
-              height={400}
+              width={80}
+              height={80}
             />
             <p className="mt-3 font-bold text-xl text-white text-center">
               {AboutInfo.project}
@@ -92,10 +97,10 @@ const About = () => {
           </div>
           <div>
             <Image className="mx-auto"
-              src="/about.jpg"
+              src="/images/customer.png"
               alt="About Me"
-              width={400}
-              height={400}
+              width={80}
+              height={80}
             />
             <p className="mt-3 font-bold text-xl text-white text-center">
               {AboutInfo.skill}

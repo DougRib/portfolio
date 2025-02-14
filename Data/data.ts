@@ -2,7 +2,7 @@ export const BaseInfo = {
     name: "Douglas",
     title: "Full Stack Developer",
     description: "I'm a passionate software engineer with a strong background in JavaScript and TypeScript. I love building clean and maintainable code, and I'm always eager to learn new technologies and techniques.",
-    profile:""
+    profile:"/images/20231012_114511.jpg"
 };
 
 export const AboutInfo = {
@@ -14,68 +14,41 @@ export const AboutInfo = {
     skill: "10"
 };
 
-export const ServicesData = [
-    {
-        id: 1,
-        title: "Frontend Development",
-        icon: "devicon-react-original",
-        description: "I specialize in creating user-friendly interfaces using React and Next.js."
-    },
-    {
-        id: 2,
-        title: "Backend Development",
-        icon: "devicon-nodejs-plain",
-        description: "I also have experience with backend development using Node.js and Express.js."
-    },
-    {
-        id: 3,
-        title: "Mobile Development",
-        icon: "devicon-android-plain",
-        description: "I'm also proficient in developing mobile applications using React Native and Expo."
-    },
-    {
-        id: 4,
-        title: "UI/UX Design",
-        icon: "devicon-figma-plain",
-        description: "I'm skilled in designing user interfaces using Figma and can help you create visually appealing and intuitive designs."
-    }
-];
-
 export const ProjectsData = [
     {
         id: 1,
         title: "Portfolio Website",
-        image: "/images/portfolio.png",
+        image: "/images/p1.png",
         url: "https://github.com/douglasribeiro"
     },
     {
         id: 2,
         title: "E-commerce website",
-        image: "/images/ecommerce.png",
+        image: "/images/p1.png",
         url: "https://github.com/douglasribeiro/ecommerce-nextjs"
     },
     {
         id: 3,
         title: "Landing page",
-        image: "/images/landingpage.png",
+        image: "/images/p1.png",
         url: "https://github.com/douglasribeiro/landing-page-nextjs"
     },
     {
         id: 4,
         title: "Chat app",
-        image: "/images/chatapp.png",
+        image: "/images/p1.png",
         url: "https://github.com/douglasribeiro/chat-app-nextjs"
     },
     {
         id: 5,
         title: "Blog website",
-        image: "/images/blog.png",
+        image: "/images/p1.png",
         url: "https://github.com/douglasribeiro/blog-nextjs"
     },
     {
         id: 6,
         title: "API development",
-        image: "/images/api.png",
+        image: "/images/p1.png",
         url: "https://github.com/douglasribeiro/api-nextjs"
     }
 ];
@@ -84,87 +57,63 @@ export const SkillsData = [
     {
         id: 1,
         title: "Next.js",
-        image: "/images/nextjs.png",
+        image: "/images/nextjs.svg",
         percent: "40%"
     },
     {
         id: 2,
         title: "React",
-        image: "/images/react.png",
+        image: "/images/react.svg",
         percent: "70%"
     },
     {
         id: 3,
         title: "TypeScript",
-        image: "/images/typescript.png",
+        image: "/images/ts.svg",
         percent: "80%"
     },
     {
         id: 4,
-        title: "Tailwind CSS",
-        image: "/images/tailwindcss.png",
-        percent: "60%"
+        title: "Python",
+        image: "/images/python.svg",
+        percent: "25%"
     },
     {
         id: 5,
-        title: "Node.js",
-        image: "/images/nodejs.png",
-        percent: "50%"
+        title: "Tailwind CSS",
+        image: "/images/tailwind.svg",
+        percent: "60%"
     },
     {
         id: 6,
-        title: "MongoDB",
-        image: "/images/mongodb.png",
-        percent: "30%"
+        title: "Node.js",
+        image: "/images/node.svg",
+        percent: "50%"
     },
     {
         id: 7,
-        title: "GraphQL",
-        image: "/images/graphql.png",
-        percent: "20%"
+        title: "MongoDB",
+        image: "/images/mongo.svg",
+        percent: "30%"
     },
     {
         id: 8,
-        title: "AWS",
-        image: "/images/aws.png",
-        percent: "10%"
+        title: "GraphQL",
+        image: "/images/ts.svg",
+        percent: "20%"
     },
     {
         id: 9,
-        title: "Docker",
-        image: "/images/docker.png",
-        percent: "15%"
+        title: "AWS",
+        image: "/images/ts.svg",
+        percent: "10%"
     },
     {
         id: 10,
-        title: "Python",
-        image: "/images/python.png",
-        percent: "25%"
-    }
-];
-
-export const ClientsReviews = [
-    {
-        id: 1,
-        name: "John Doe",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis, dui vitae pharetra commodo, enim justo faucibus est, id fermentum velit neque in neque.",
-        image: "/images/client1.jpg",
-        rating: 5
+        title: "Docker",
+        image: "/images/ts.svg",
+        percent: "15%"
     },
-    {
-        id: 2,
-        name: "Jane Smith",
-        description: "Ut id lectus a velit tempus viverra. Duis rutrum, mauris non elementum consectetur, enim diam consectetur nunc, in placerat felis velit eu erat.",
-        image: "/images/client2.jpg",
-        rating: 4
-    },
-    {
-        id: 3,
-        name: "Bob Johnson",
-        description: "Proin quis arcu non neque bibendum placerat. Donec consequat, orci sed lobortis ullamcorper, velit nunc tincidunt velit, vel fermentum neque turpis a neque.",
-        image: "/images/client3.jpg",
-        rating: 3
-    }
 ];
 
 export const Blog = [

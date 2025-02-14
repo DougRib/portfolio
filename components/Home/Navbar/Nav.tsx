@@ -1,9 +1,12 @@
 "use client"
 
+import MagicButton from '@/components/ui/MagicButton'
+import { ModeToggle } from '@/components/ui/ModeToggle'
 import { navLinks } from '@/constants/constant'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { FaHandshake } from 'react-icons/fa'
 import {HiBars3BottomRight} from "react-icons/hi2"
 
 type NavProps = {
@@ -37,7 +40,7 @@ const Nav = ({openNav}: NavProps) => {
         <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
             {/*LOGO*/}
             <Image 
-                src="/logo.png"  
+                src="/logo (2).png"  
                 alt="logo" 
                 width={170} 
                 height={170}
@@ -56,6 +59,16 @@ const Nav = ({openNav}: NavProps) => {
                 </div>
                 {/*BUTTON*/}
                 <div className="flex items-center space-x-4">
+                    <ModeToggle />
+
+
+                    <a href="#">
+                        <MagicButton 
+                            title="Me Contratar"
+                            icon={<FaHandshake />}
+                            position="right"
+                        />
+                    </a>
                     <button className="md:px-10 md:py-3 px-8 text-black font-semibold sm:text-base text-sm bg-[#c9a227] hover:bg-yellow-600 transition-all duration-200 rounded-lg">
                         Me Contratar
                     </button>
