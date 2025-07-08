@@ -1,0 +1,39 @@
+
+{
+  "compilerOptions": {
+    "target": "ES2022",                             /* Define a versão do ECMAScript para o código gerado. ES2022 é uma boa escolha para ambientes modernos. */
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],                                              /* Inclui as bibliotecas de declaração para o DOM, tipos iteráveis e as últimas funcionalidades ES. */
+    "allowJs": true,                                /* Permite que arquivos .js e .jsx sejam compilados. */
+    "skipLibCheck": true,                           /* Ignora a verificação de tipo de todos os arquivos de declaração (.d.ts) para agilizar a compilação. */
+    "esModuleInterop": true,                        /* Habilita a interoperabilidade entre módulos CommonJS e ES modules, facilitando importações. */
+    "allowSyntheticDefaultImports": true,           /* Permite importações de default sintéticas de módulos sem um export default. Necessário com esModuleInterop. */
+    "strict": true,                                 /* Ativa todas as opções de verificação de tipo estritas para maior segurança. */
+    "forceConsistentCasingInFileNames": true,       /* Garante que o uso de maiúsculas/minúsculas em nomes de arquivos seja consistente. */
+    "noFallthroughCasesInSwitch": true,             /* Emite um erro para casos de switch sem "break". */
+    "module": "ESNext",                             /* Usa o sistema de módulos ESNext, que é o que o Vite espera e otimiza. */
+    "moduleResolution": "bundler",                  /* Garante que o TypeScript resolva módulos de forma que seja compatível com bundlers como o Vite. */
+    "resolveJsonModule": true,                      /* Permite importar arquivos .json diretamente. */
+    "isolatedModules": true,                        /* Garante que cada arquivo possa ser compilado de forma independente. Essencial para o modo de trabalho do Vite. */
+    "noEmit": true,                                 /* Não emite nenhum arquivo JavaScript. O Vite/Babel cuidam da transpilação final. */
+    "jsx": "react-jsx",                             /* Define como o JSX é transformado. "react-jsx" é a forma moderna para React 17+. */
+    "paths": {
+      "@/*": ["./src/*"]                            /* Permite aliases de caminho, como @/components para ./src/components. */
+    }
+  },
+  "include": [
+    "src",                                          /* Inclui a pasta src para compilação. */
+    "vite-env.d.ts"                                 /* Inclui o arquivo de ambiente do Vite para tipos globais. */
+  ],
+    "exclude": [
+        "node_modules",                                 /* Exclui a pasta node_modules para evitar conflitos e lentidão. */
+        "dist"                                          /* Exclui a pasta de distribuição, pois não deve ser compilada pelo TypeScript. */
+    ],
+    // "references": [
+    //     { "path": "./tsconfig.node.json" }
+    // ]
+  /* Referencia o tsconfig.node.json para as configurações do ambiente Node.js (se for um projeto Vite padrão). */
+}
