@@ -53,7 +53,7 @@ export const Skills = () => {
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg shadow-xs card-hover"
+              className="bg-card p-6 rounded-lg  card-hover bg-gradient-to-br from-gray-700 hover:from-gray-500 shadow-[0_0_30px_#ff00ff33]"
             >
               <div className="text-left mb-4">
                 <h3 className="font-semibold text-lg">{skill.name}</h3>

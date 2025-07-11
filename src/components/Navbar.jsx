@@ -1,10 +1,11 @@
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const natItems = [
   { name: "Home", href: "#hero" },
-  { name: "AboutMe", href: "#aboutme" },
+  { name: "About Me", href: "#aboutme" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
@@ -38,12 +39,13 @@ export const Navbar = () => {
           href="#hero"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground">Douglas</span>
+            <span className="text-glow text-foreground">Douglas </span>
             My Portfolio
           </span>
         </a>
         {/* desktop nav */}
-        <div className="hidden md:flex  space-x-6">
+        <div className="hidden md:flex items-center space-x-6 ">
+          <ThemeToggle />
           {natItems.map((item, key) => (
             <a
               key={key}
@@ -56,7 +58,7 @@ export const Navbar = () => {
         </div>
 
         {/* mobile nav */}
-        <button 
+        <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden text-foreground hover:text-primary transition-colors duration-300"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
