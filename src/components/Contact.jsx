@@ -1,16 +1,13 @@
 import {
-  Facebook,
-  Instagram,
-  Linkedin,
   Mail,
   MapPin,
   Phone,
   Send,
-  Youtube,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toasts";
 import { useState } from "react";
+import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandYoutube } from "@tabler/icons-react";
 
 export const Contact = () => {
   const { toast } = useToast();
@@ -46,7 +43,7 @@ export const Contact = () => {
           <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
           <div className="space-y-6 justify-center">
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start border border-primary rounded-lg p-3 space-x-4">
               <div className="p-3 rounded-full bg-primary/10">
                 <Mail className="h-6 w-6 text-primary" />
               </div>
@@ -61,7 +58,7 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
+            <div className="flex items-start space-x-4 border border-primary rounded-lg p-3">
               <div className="p-3 rounded-full bg-primary/10">
                 <Phone className="h-6 w-6 text-primary" />
               </div>
@@ -69,15 +66,15 @@ export const Contact = () => {
                 <h4 className="font-medium">Telefone</h4>
                 <a
                   href="tel:+5551984793631"
-                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                  className="text-muted-foreground  hover:text-primary transition-colors duration-300"
                 >
                   +55 51 984793631
                 </a>
               </div>
             </div>
 
-            <div className="flex items-start space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
+            <div className="flex items-start space-x-4 border border-primary rounded-lg p-3">
+              <div className="p-3 rounded-full  bg-primary/10">
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
               <div className="">
@@ -97,29 +94,29 @@ export const Contact = () => {
             <h4 className="font-medium mb-4">Conecte comigo </h4>
             <div className="flex space-x-4 justify-center">
               <a href="" target="_blank">
-                <Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors duration-300" />
+                <IconBrandLinkedin className="h-8 w-8 text-muted-foreground hover:text-primary transition-colors duration-300" />
               </a>
               <a href="" target="_blank">
-                <Instagram className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors duration-300" />
+                <IconBrandInstagram className="h-8 w-8 text-muted-foreground hover:text-primary transition-colors duration-300" />
               </a>
               <a href="" target="_blank">
-                <Facebook className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors duration-300" />
+                <IconBrandFacebook className="h-8 w-8 text-muted-foreground hover:text-primary transition-colors duration-300" />
               </a>
               <a href="" target="_blank">
-                <Youtube className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors duration-300" />
+                <IconBrandYoutube className="h-8 w-8 text-muted-foreground hover:text-primary transition-colors duration-300" />
               </a>
             </div>
           </div>
         </div>
 
         <div
-          className="bg-card p-8 rounded-lg shadow-xs"
+          className="bg-gradient-to-br from-gray-700 p-8 shadow-[0_0_10px_#e76f51] rounded-lg "
           onClick={handleSubmit}
         >
-          <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
+          <h3 className="text-2xl font-semibold mb-6">Enviar Mensagem</h3>
           <form className="space-y-6">
             <div>
-              <label className="text-sm font-medium mb-2" htmlFor="name">
+              <label className="text-md  font-medium mb-2" htmlFor="name">
                 Nome
               </label>
               <input
@@ -132,7 +129,7 @@ export const Contact = () => {
             </div>
 
             <div>
-              <label className=" text-sm font-medium mb-2" htmlFor="email">
+              <label className=" text-md font-medium mb-2" htmlFor="email">
                 Email
               </label>
               <input
@@ -145,7 +142,7 @@ export const Contact = () => {
             </div>
 
             <div>
-              <label className="text-sm font-medium mb-2" htmlFor="message">
+              <label className="text-md font-medium mb-2" htmlFor="message">
                 Messagem
               </label>
               <textarea

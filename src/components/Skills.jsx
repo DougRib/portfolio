@@ -38,7 +38,7 @@ export const Skills = () => {
               key={key}
               onClick={() => setIsCategory(category)}
               className={cn(
-                "px-4 py-2 rounded-full transition-colors duration-300 capitalize",
+                "px-4 py-2 rounded-full hover:text-primary-hover transition-colors duration-300 capitalize",
                 activeCategory === category
                   ? "bg-primary text-primary-foreground"
                   : "bg-secondary/70 text-foreground hover:bg-secondary"
@@ -53,7 +53,7 @@ export const Skills = () => {
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg  card-hover bg-gradient-to-br from-gray-700 hover:from-gray-500 shadow-[0_0_30px_#ff00ff33]"
+              className="bg-card p-6 rounded-lg  card-hover bg-gradient-to-br from-gray-700 hover:from-gray-500 hover:shadow-[0_0_10px_#e76f51]"
             >
               <div className="text-left mb-4">
                 <h3 className="font-semibold text-lg">{skill.name}</h3>

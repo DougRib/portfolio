@@ -36,7 +36,7 @@ export const AboutMe = () => {
               </a>
               <a
                 href=""
-                className="img-effect px-6 py-2 text-primary border border-primary rounded-full shadow-lg hover:bg-secondary/90 transition-colors duration-300"
+                className="img-effect px-6 py-2 text-primary border border-primary rounded-full shadow-lg hover:bg-secondary/90 hover:scale-105 active:scale-95 transition-colors duration-300"
               >
                 Download CV
               </a>
@@ -44,10 +44,10 @@ export const AboutMe = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-6 ">
-            <div className="gradient-border p-6  card-hover">
+            <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Code className="h-6 w-6 text-black" />
                 </div>
                 <div className="text-left ">
                   <h4 className="text-lg font-semibold">Web Development</h4>
@@ -61,7 +61,7 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-primary" />
+                  <User className="h-6 w-6 text-black" />
                 </div>
                 <div className="text-left">
                   <h4 className="text-lg font-semibold">User Experience</h4>
@@ -75,7 +75,7 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-primary" />
+                  <Briefcase className="h-6 w-6 text-black" />
                 </div>
                 <div className="text-left">
                   <h4 className="text-lg font-semibold">

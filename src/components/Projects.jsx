@@ -50,7 +50,7 @@ export const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="neon-card bg-card  card-hover bg-gradient-to-br from-gray-700 hover:from-gray-500 shadow-[0_0_30px_#ff00ff33]"
+              className="neon-card bg-card  card-hover bg-gradient-to-br from-gray-700 hover:from-gray-500 shadow-[0_0_10px_#e76f51]"
             >
               <div className="relative overflow-hidden img-effect">
                 <img

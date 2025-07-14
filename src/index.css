@@ -5,8 +5,10 @@
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
   --color-primary: hsl(var(--primary));
+  --color-primary-hover: hsl(var(--primary-hover));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-card: hsl(var(--card));
+  --color-accent-color: hsl(var(--accent-color));
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -64,8 +66,9 @@
   :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
-    --primary: 250 47% 60%;
+    --primary: 25 85% 50%;
     --primary-foreground: 210 40% 98%;
+    --primary-hover: 25 85% 60%;
     --card: 0 0% 100%;
     --border: 214 32% 98%;
     --accent-color: #d9d9d9;
@@ -75,10 +78,12 @@
   .dark {
     --background: 222 47% 4%;
     --foreground: 210 40% 98%;
-    --primary: 250 47% 60%;
+    --primary: 04 60% 50%;
+    --primary-hover: 18 99% 55%;
     --primary-foreground: 210 40% 98%;
     --card: 222 47% 11%;
     --border: 214 32% 20%;
+    --accent-color: linear-gradient(to right, #f25c3b, #b34729, #7b2d26);
   }
 
   * {
@@ -129,7 +134,7 @@
 
 @utility gradient-border {
   @apply relative rounded-md;
-  background: linear-gradient(45deg, #f3ec78, #af4261);
+  background: linear-gradient(to left, #f25c3b, #b34729, #7b2d26);
   background-clip: padding-box;
   border-radius: 0.5rem;
   border: 1px solid transparent;

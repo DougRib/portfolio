@@ -1,9 +1,19 @@
-import { cn } from "@/lib/utils";
-import { Menu } from "lucide-react";
-import { useEffect, useState } from "react";
+
+import {
+  Navbar,
+  NavBody,
+  NavItems,
+  MobileNav,
+  NavbarLogo,
+  MobileNavHeader,
+  MobileNavToggle,
+  MobileNavMenu,
+} from "@/components/ui/resizable-navbar";
+import { useState } from "react";
 import { ThemeToggle } from "./ThemeToggle";
 
-const natItems = [
+export function NavbarDemo() {
+  const navItems = [
   { name: "Home", href: "#hero" },
   { name: "About Me", href: "#aboutme" },
   { name: "Skills", href: "#skills" },
@@ -11,83 +21,43 @@ const natItems = [
   { name: "Contact", href: "#contact" },
 ];
 
-export const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
-    };
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav
-      className={cn(
-        "fixed left-0 z-40 w-full transition-all duration-300",
-        isScrolled
-          ? "py-3 bg-background/80 shadow-lg backdrop-blur-md shadow-xs "
-          : "py-5 "
-      )}
-    >
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <a
-          className="text-xl font-bold text-primary flex items-center"
-          href="#hero"
-        >
-          <span className="relative z-10">
-            <span className="text-glow text-foreground">Douglas </span>
-            My Portfolio
-          </span>
-        </a>
-        {/* desktop nav */}
-        <div className="hidden md:flex items-center space-x-6 ">
+    <div className="relative w-full">
+      <Navbar>
+        {/* Desktop Navigation */}
+        <NavBody>
+          <NavbarLogo />
+          <NavItems items={navItems} />
           <ThemeToggle />
-          {natItems.map((item, key) => (
-            <a
-              key={key}
-              href={item.href}
-              className="text-foreground hover:text-primary transition-colors duration-300"
-            >
-              {item.name}
-            </a>
-          ))}
-        </div>
+        </NavBody>
 
-        {/* mobile nav */}
-        <button
-          onClick={() => setIsMenuOpen((prev) => !prev)}
-          className="md:hidden text-foreground hover:text-primary transition-colors duration-300"
-          aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Mobile Navigation */}
+        <MobileNav>
+          <MobileNavHeader>
+            <NavbarLogo />
+            <MobileNavToggle
+              isOpen={isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} />
+          </MobileNavHeader>
 
-        <div
-          className={cn(
-            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden",
-            isMenuOpen
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          )}
-        >
-          <div className="flex flex-col text-xl  space-y-8">
-            {natItems.map((item, key) => (
+          <MobileNavMenu isOpen={isMobileMenuOpen} onClose={() => setIsMobileMenuOpen(false)}>
+            {navItems.map((item, idx) => (
               <a
-                key={key}
+                key={`mobile-link-${idx}`}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="relative font-bold text-primary flex  dark:text-neutral-300">
+                <span className="block">{item.name}</span>
               </a>
             ))}
-          </div>
-        </div>
-      </div>
-    </nav>
+          </MobileNavMenu>
+        </MobileNav>
+      </Navbar>
+      {/* Navbar */}
+    </div>
   );
-};
+}
+
+
