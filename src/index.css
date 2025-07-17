@@ -64,6 +64,17 @@
 
 @layer base {
   :root {
+    --background: 222 47% 4%;
+    --foreground: 210 40% 98%;
+    --primary: 04 60% 50%;
+    --primary-hover: 18 99% 55%;
+    --primary-foreground: 210 40% 98%;
+    --card: 222 47% 11%;
+    --border: 214 32% 20%;
+    --accent-color: linear-gradient(to right, #f25c3b, #b34729, #7b2d26);
+  }
+
+ {/* :root {
     --background: 210 40% 98%;
     --foreground: 222 47% 11%;
     --primary: 25 85% 50%;
@@ -74,7 +85,7 @@
     --accent-color: #d9d9d9;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+  }*/}
   .dark {
     --background: 222 47% 4%;
     --foreground: 210 40% 98%;

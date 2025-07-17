@@ -28,11 +28,11 @@ export const Skills = () => {
   return (
     <section id="skills" className="relative py-24 px-4 bg-secondary/30">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-5 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-5 text-center opacity-0 animate-fade-in-delay-1">
           My <span className="text-primary"> Skills</span>
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12 opacity-0 animate-fade-in-delay-2">
           {categories.map((category, key) => (
             <button
               key={key}
@@ -49,7 +49,7 @@ export const Skills = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 animate-fade-in-delay-3">
           {filteredSkills.map((skill, key) => (
             <div
               key={key}

@@ -1,3 +1,4 @@
+import { IconBrain, IconChartBar, IconCode } from "@tabler/icons-react";
 import { Briefcase, Code, User } from "lucide-react";
 
 export const AboutMe = () => {
@@ -7,24 +8,28 @@ export const AboutMe = () => {
       className="relative min-h-screen flex items-center justify-center px-4 py-16"
     >
       <div className="container max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center opacity-0 animate-fade-in-delay-1">
           About
           <span className="text-primary"> Me</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 ">
+          <div className="space-y-6 opacity-0 animate-fade-in-delay-2">
             <h3 className="text-2xl font-semibold">
-              Web Developer & Analitics
+              Desenvolvedor Web e Analista de Dados
             </h3>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
-              I am a passionate web developer with a focus on creating dynamic
-              and responsive web applications.
+              Sou estudante de Ciência da Computação com foco em Desenvolvimento
+              Web Fullstack e Análise de Dados com Python. Tenho me dedicado à
+              criação de interfaces modernas e intuitivas, aplicando tecnologias
+              como React, Next.js e TailwindCSS, além de ferramentas para
+              análise como Pandas e Matplotlib. 
             </p>
-            <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-              My journey in web development started with a curiosity for how
-              websites work, and it has grown into a full-fledged passion for
-              building user-friendly and efficient web solutions.
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+              Minha trajetória no
+              desenvolvimento começou pela curiosidade de entender como as
+              aplicações funcionam e evoluiu para uma paixão em construir
+              soluções web funcionais, eficientes e centradas no usuário.
             </p>
 
             <div className="flex flex-col justify-center sm:flex-row gap-4 pt-2">
@@ -35,7 +40,8 @@ export const AboutMe = () => {
                 Contact Me
               </a>
               <a
-                href=""
+                href="/DOUGLAS RIBEIRO.pdf"
+                download="Currículo DOUGLAS RIBEIRO.pdf"
                 className="img-effect px-6 py-2 text-primary border border-primary rounded-full shadow-lg hover:bg-secondary/90 hover:scale-105 active:scale-95 transition-colors duration-300"
               >
                 Download CV
@@ -43,16 +49,19 @@ export const AboutMe = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 ">
+          <div className="grid grid-cols-1 gap-3 opacity-0 animate-fade-in-delay-3 ">
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-black" />
+                  <IconCode className="h-6 w-6 text-black" />
                 </div>
                 <div className="text-left ">
-                  <h4 className="text-lg font-semibold">Web Development</h4>
+                  <h4 className="text-lg font-semibold">
+                    Desenvolvimento Fullstack
+                  </h4>
                   <p className="text-sm text-muted-foreground">
-                    Building responsive and dynamic web applications.
+                    Desenvolvimento de aplicações com tecnologias como React, Next.js, TailwindCSS, Node.js
+                    e banco de dados SQL e NoSQL.
                   </p>
                 </div>
               </div>
@@ -61,12 +70,13 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <User className="h-6 w-6 text-black" />
+                  <IconChartBar className="h-6 w-6 text-black" />
                 </div>
                 <div className="text-left">
-                  <h4 className="text-lg font-semibold">User Experience</h4>
+                  <h4 className="text-lg font-semibold">Análise de Dados</h4>
                   <p className="text-sm text-muted-foreground">
-                    Focusing on user-friendly interfaces and experiences.
+                    Análise de dados, visualização e relatórios utilizando
+                    ferramentas como Python, Pandas, NumPy, Matplotlib e Seaborn.
                   </p>
                 </div>
               </div>
@@ -75,14 +85,15 @@ export const AboutMe = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Briefcase className="h-6 w-6 text-black" />
+                  <IconBrain className="h-6 w-6 text-black" />
                 </div>
                 <div className="text-left">
                   <h4 className="text-lg font-semibold">
-                    Professional Experience
+                    Projetos e Aprendizado Contínuo
                   </h4>
                   <p className="text-sm text-muted-foreground">
-                    Over 3 years of experience in web development and analytics.
+                    Sempre buscando evoluir por meio de projetos pessoais e
+                    estudos constantes nas áreas de tecnologia e dados.
                   </p>
                 </div>
               </div>

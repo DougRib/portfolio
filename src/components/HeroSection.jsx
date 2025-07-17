@@ -9,7 +9,7 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center text-white z-10">
         <div className="space-y-6 bg-opacity-50 p-8 rounded-lg shadow-lg">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight">
-            <span className="opacity-0 animate-fade-in">Olá </span>
+            <span className="opacity-0 animate-fade-in">Olá, sou </span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               Douglas
             </span>
@@ -18,7 +18,7 @@ export const HeroSection = () => {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-2-xl mx-auto mb-6 opacity-0 animate-fade-in-delay-3">
-            Discover my projects, skills, and journey in web development.
+            Descubra meus projetos, habilidades, jornada em desenvolvimento web fullstack e análise de dados.
           </p>
           <div className="flex justify-center space-x-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-btn">

@@ -30,8 +30,8 @@ export function NavbarDemo() {
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
-          <ThemeToggle />
         </NavBody>
+        
 
         {/* Mobile Navigation */}
         <MobileNav>
