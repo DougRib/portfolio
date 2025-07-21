@@ -115,19 +115,19 @@
   margin-inline: auto;
   padding-inline: 2rem;
 
-  @media (min-width >= 640px) {
+  @media (min-width : 640px) {
     max-width: 640px;
   }
-  @media (min-width >= 768px) {
+  @media (min-width : 768px) {
     max-width: 768px;
   }
-  @media (min-width >= 1024px) {
+  @media (min-width : 1024px) {
     max-width: 1024px;
   }
-  @media (min-width >= 1280px) {
+  @media (min-width : 1280px) {
     max-width: 1280px;
   }
-  @media (min-width >= 1400px) {
+  @media (min-width : 1400px) {
     max-width: 1400px;
   }
 }
@@ -211,6 +211,85 @@
     height: 2px;
     background: linear-gradient(to right, #ff00ff, #00ffff);
     transition:width 0.4s ease;
+  }
+}
+
+@layer utility {
+  .gradient-bd {
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .gradient-bd::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1.5px; /* Border width */
+    border-radius: 20px;
+    background: linear-gradient(
+      20deg,
+      #fdfdfd 0%,
+      rgba(253, 253, 253, 0) 100%
+    ); /* Gradient colors */
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  .tech-stack-gradient-left-box {
+    background: rgb(11, 6, 32);
+    background: linear-gradient(
+      90deg,
+      rgba(11, 6, 32, 1) 0%,
+      rgba(11, 6, 32, 0.6601234243697479) 53%,
+      rgba(16, 11, 51, 0) 100%
+    );
+  }
+  .tech-stack-gradient-right-box {
+    background: rgb(11, 6, 32);
+    background: linear-gradient(
+      -90deg,
+      rgba(11, 6, 32, 1) 0%,
+      rgba(11, 6, 32, 0.6601234243697479) 53%,
+      rgba(16, 11, 51, 0) 100%
+    );
+  }
+  .marquee-item {
+    float: left;
+  }
+  .marquee-item:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    bottom: -100%;
+    left: -100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(229, 172, 142, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(229, 172, 142, 0)
+    );
+  }
+  /*This activates the shine once the button has been hovered*/
+  .marquee-item:hover::after,
+  button:focus::after {
+    animation: shine 1s forwards;
+  }
+  
+}
+@keyframes shine {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -15em);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
   }
 }
 

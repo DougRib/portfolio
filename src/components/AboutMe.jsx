@@ -1,5 +1,5 @@
 import { IconBrain, IconChartBar, IconCode } from "@tabler/icons-react";
-import { Briefcase, Code, User } from "lucide-react";
+
 
 export const AboutMe = () => {
   return (

@@ -2,19 +2,23 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  { name: "HTML/CSS", level: 45, category: "frontend" },
-  { name: "React", level: 30, category: "frontend" },
-  { name: "TypeScript", level: 30, category: "frontend" },
-  { name: "Tailwind Css", level: 50, category: "frontend" },
-  { name: "Next.js", level: 30, category: "frontend" },
+  { name: "CSS", icon: "/svg/css.svg", category: "frontend" },
+  { name: "HTML", icon: "/svg/html.svg", category: "frontend" },
+  { name: "React", icon: "/svg/react-dark.svg", category: "frontend" },
+  { name: "TypeScript", icon: "/svg/ts.svg", category: "frontend" },
+  {
+    name: "Tailwind Css",
+    icon: "/svg/tailwindcss-dark.svg",
+    category: "frontend",
+  },
+  { name: "Next.js", icon: "/svg/nextjs-dark.svg", category: "frontend" },
 
-  { name: "Node.js", level: 50, category: "backend" },
-  { name: "PostgreSQL", level: 30, category: "backend" },
-  { name: "Python", level: 30, category: "backend" },
+  { name: "Node.js", icon: "/svg/nodejs-dark.svg", category: "backend" },
+  { name: "Python", icon: "/svg/python-dark.svg", category: "backend" },
 
-  { name: "Git/GitHub", level: 40, category: "tolls" },
-  { name: "Docker", level: 30, category: "tolls" },
-  { name: "VsCode", level: 60, category: "tolls" },
+  { name: "Git/GitHub", icon: "/svg/github.svg", category: "tolls" },
+  { name: "Docker", icon: "/svg/docker.svg", category: "tolls" },
+  { name: "VsCode", icon: "/svg/vscode-dark.svg", category: "tolls" },
 ];
 
 const categories = ["all", "frontend", "backend", "tolls"];
@@ -26,8 +30,8 @@ export const Skills = () => {
   );
 
   return (
-    <section id="skills" className="relative py-24 px-4 bg-secondary/30">
-      <div className="container mx-auto max-w-5xl">
+    <section id="skills" className="relative py-24 bg-secondary/30">
+      <div className="container mx-auto  w-full  max-w-2xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-5 text-center opacity-0 animate-fade-in-delay-1">
           My <span className="text-primary"> Skills</span>
         </h2>
@@ -49,30 +53,30 @@ export const Skills = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 animate-fade-in-delay-3">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg-gap-3 xl:gap-2 place-items-center p-5 opacity-0 animate-fade-in-delay-3">
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg  card-hover bg-gradient-to-br from-gray-700 hover:from-gray-500 hover:shadow-[0_0_10px_#e76f51]"
+              className="bg-card p-6 rounded-lg w-32 h-32 flex-shrink-0 gradient-bd marquee-item hover:-translate-y-3 transition-all duration-700 bg-gradient-to-br from-gray-700 hover:shadow-[0_0_10px_#e76f51] "
             >
-              <div className="text-left mb-4">
-                <h3 className="font-semibold text-lg">{skill.name}</h3>
-              </div>
-              <div className="w-full bg-secondary/50 h-2 rounded-full overflow-hidden">
-                <div
-                  className="bg-primary h-2 rounded-full origin-left animate-[grow_1.5s_ease-out]"
-                  style={{ width: skill.level + "%" }}
-                />
-              </div>
-              <div className="text-right mt-1">
-                <span className="text-sm text-muted-foreground">
-                  {skill.level} %
-                </span>
+              <div className="flex relative overflow-hidden items-center ">
+                {skill.icon && (
+                  <img
+                    src={skill.icon}
+                    alt={skill.name}
+                    className="w-20 h-20  mx-auto"
+                  />
+                )}
               </div>
             </div>
           ))}
+          ;
         </div>
       </div>
     </section>
   );
 };
+{
+  /*gradient-border marquee-item hover:-translate-y-3 transition-all duration-700
+   */
+}

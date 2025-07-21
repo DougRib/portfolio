@@ -10,7 +10,6 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
-import { ThemeToggle } from "./ThemeToggle";
 
 export function NavbarDemo() {
   const navItems = [
