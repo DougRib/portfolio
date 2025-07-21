@@ -1,4 +1,4 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { IconArrowAutofitRight, IconBrandGithub, IconExternalLink } from "@tabler/icons-react";
 
 const projects = [
   {
@@ -48,11 +48,11 @@ export const Projects = () => {
           para minha evolução profissional.
         </p>
 
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 animate-fade-in-delay-3">
+        <div className=" grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-6 opacity-0 animate-fade-in-delay-3">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="neon-card bg-card img-effect card-hover bg-gradient-to-br from-gray-700 hover:from-gray-500 shadow-[0_0_10px_#e76f51]"
+              className="neon-card bg-card img-effect card-hover transition-all duration-400 bg-gradient-to-br from-gray-700 hover:from-gray-500 shadow-[0_0_10px_#e76f51]"
             >
               <div className="relative overflow-hidden ">
                 <img
@@ -83,13 +83,13 @@ export const Projects = () => {
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <ExternalLink size={25} />
+                      <IconExternalLink size={25} />
                     </a>
                     <a
                       href={project.github}
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <Github size={25} />
+                      <IconBrandGithub size={25} />
                     </a>
                   </div>
                 </div>
@@ -102,10 +102,10 @@ export const Projects = () => {
           <a
             href="https://github.com/DougRib"
             target="_blank"
-            className="cosmic-btn w-fit flex items-center mx-auto gap-2"
+            className="cosmic-btn w-fit flex transition-all duration-400 items-center mx-auto gap-2"
           >
             View More on GitHub
-            <ArrowRight size={25} />
+            <IconArrowAutofitRight size={25} />
           </a>
         </div>
       </div>

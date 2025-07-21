@@ -197,7 +197,7 @@ export const Contact = () => {
               type="submit"
               disabled={isSubmitting}
               className={cn(
-                "cosmic-btn w-full flex hover:bg-primary/90 transition-colors duration-300 items-center justify-center gap-2"
+                "cosmic-btn w-full flex hover:bg-primary/90 transition-all duration-400 items-center justify-center gap-2"
               )}
             >
               {isSubmitting ? "Enviando..." : "Enviar Mensagem"}

@@ -42,7 +42,7 @@ export const AboutMe = () => {
               <a
                 href="/DOUGLAS RIBEIRO.pdf"
                 download="Currículo DOUGLAS RIBEIRO.pdf"
-                className="img-effect px-6 py-2 text-primary border border-primary rounded-full shadow-lg hover:bg-secondary/90 hover:scale-105 active:scale-95 transition-colors duration-300"
+                className="img-effect px-6 py-2 text-primary border border-primary rounded-full shadow-lg hover:bg-secondary/90 hover:scale-105 active:scale-95 transition-all duration-400"
               >
                 Download CV
               </a>
