@@ -145,12 +145,18 @@
 
 @utility gradient-border {
   @apply relative rounded-md;
-  background: linear-gradient(to left, #f25c3b, #b34729, #7b2d26);
+  background: linear-gradient(45deg, #f78502, #f60404);
   background-clip: padding-box;
   border-radius: 0.5rem;
   border: 1px solid transparent;
   padding: 1px;
   {/*background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)))*/}
+}
+
+@utility gradient-text {
+  @apply bg-clip-text text-transparent;
+  background: linear-gradient(45deg, #8f0099, #8f0099, #f60404, #f60404); 
+  background: -webkit-linear-gradient(45deg, #8f0099, #8f0099, #f60404, #f60404);                                                               
 }
 
 @utility cosmic-btn {

@@ -8,9 +8,8 @@ export const AboutMe = () => {
       className="relative min-h-screen flex items-center justify-center px-4 py-16"
     >
       <div className="container max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center opacity-0 animate-fade-in-delay-1">
-          About
-          <span className="text-primary"> Me</span>
+        <h2 className="text-3xl md:text-4xl gradient-text bg-clip-text text-transparent mb-12 text-center opacity-0 animate-fade-in-delay-1">
+          About Me
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 opacity-0 animate-fade-in-delay-2">
@@ -50,7 +49,7 @@ export const AboutMe = () => {
           </div>
 
           <div className="grid grid-cols-1 gap-3 opacity-0 animate-fade-in-delay-3 ">
-            <div className="gradient-border p-6 card-hover">
+            <div className="gradient-border gradient-bd p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <IconCode className="h-6 w-6 text-black" />
@@ -67,7 +66,7 @@ export const AboutMe = () => {
               </div>
             </div>
 
-            <div className="gradient-border p-6 card-hover">
+            <div className="gradient-border gradient-bd p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <IconChartBar className="h-6 w-6 text-black" />
@@ -82,7 +81,7 @@ export const AboutMe = () => {
               </div>
             </div>
 
-            <div className="gradient-border p-6 card-hover">
+            <div className="gradient-border gradient-bd p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
                   <IconBrain className="h-6 w-6 text-black" />

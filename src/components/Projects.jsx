@@ -37,10 +37,10 @@ export const Projects = () => {
   return (
     <section id="projects" className="relative py-24 px-4">
       <div className=" mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-5 text-center opacity-0 animate-fade-in-delay-1">
-          My <span className="text-primary">Projects</span>
+        <h2 className="text-3xl p-5 md:text-4xl gradient-text bg-clip-text text-transparent mb-5 text-center opacity-0 animate-fade-in-delay-1">
+          My Projects
         </h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto text-center mb-12 opacity-0 animate-fade-in-delay-2">
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-center mb-12 opacity-0 animate-fade-in-delay-2">
           Nesta seção apresento alguns dos projetos que desenvolvi, aplicando na
           prática meus conhecimentos em desenvolvimento web e análise de dados.
           Todos os
@@ -52,7 +52,7 @@ export const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="neon-card bg-card img-effect card-hover transition-all duration-400 bg-gradient-to-br from-gray-700 hover:from-gray-500 shadow-[0_0_10px_#e76f51]"
+              className="neon-card bg-card transition-all duration-400 bg-gradient-to-br from-gray-700 hover:from-gray-500 shadow-primary/60 hover:shadow-xl rounded-lg "
             >
               <div className="relative overflow-hidden ">
                 <img
@@ -102,7 +102,7 @@ export const Projects = () => {
           <a
             href="https://github.com/DougRib"
             target="_blank"
-            className="cosmic-btn w-fit flex transition-all duration-400 items-center mx-auto gap-2"
+            className="cosmic-btn img-effect w-fit flex transition-all duration-400 items-center mx-auto gap-2"
           >
             View More on GitHub
             <IconArrowAutofitRight size={25} />

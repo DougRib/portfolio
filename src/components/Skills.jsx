@@ -32,8 +32,8 @@ export const Skills = () => {
   return (
     <section id="skills" className="relative py-24 bg-secondary/30">
       <div className="container mx-auto  w-full  max-w-2xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-5 text-center opacity-0 animate-fade-in-delay-1">
-          My <span className="text-primary"> Skills</span>
+        <h2 className="text-3xl p-5 md:text-4xl gradient-text bg-clip-text text-transparent mb-5 text-center opacity-0 animate-fade-in-delay-1">
+          My Skills
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12 opacity-0 animate-fade-in-delay-2">
@@ -53,11 +53,11 @@ export const Skills = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg-gap-3 xl:gap-2 place-items-center p-5 opacity-0 animate-fade-in-delay-3">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 lg-gap-3 xl:gap-2 place-items-center opacity-0 animate-fade-in-delay-3">
           {filteredSkills.map((skill, key) => (
             <div
               key={key}
-              className="bg-card p-6 rounded-lg w-32 h-32 flex-shrink-0 gradient-bd marquee-item hover:-translate-y-3 transition-all duration-700 bg-gradient-to-br from-gray-700 hover:shadow-[0_0_10px_#e76f51] "
+              className="bg-card p-6 rounded-lg w-32 h-32 flex-shrink-0 gradient-bd marquee-item hover:-translate-y-3 transition-all duration-700 bg-gradient-to-br from-gray-700 hover:shadow-xl shadow-primary/60 "
             >
               <div className="flex relative overflow-hidden items-center ">
                 {skill.icon && (

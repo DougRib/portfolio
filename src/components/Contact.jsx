@@ -49,8 +49,8 @@ export const Contact = () => {
   return (
     <section id="contact" className="relative bg-secondary/30 py-16 px-4">
       <div className="container mx-auto max-w-5xl py-10 px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-5 text-center opacity-0 animate-fade-in-delay-1">
-          Entre em <span className="text-primary">Contato</span>
+        <h2 className="text-3xl md:text-4xl p-5 gradient-text bg-clip-text text-transparent mb-5 text-center opacity-0 animate-fade-in-delay-1">
+          Entre em Contato
         </h2>
         <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-2xl mx-auto text-center opacity-0 animate-fade-in-delay-2">
           Estou sempre aberto a discutir novos projetos, ideias criativas ou
@@ -65,7 +65,7 @@ export const Contact = () => {
           </h3>
 
           <div className="space-y-5 justify-center">
-            <div className="flex items-start border border-primary rounded-lg p-3 space-x-4">
+            <div className="flex items-start rounded-xl border-1 border-primary  p-3 space-x-4">
               <div className="p-3 rounded-full bg-primary/10">
                 <Mail className="h-6 w-6 text-primary" />
               </div>
@@ -80,7 +80,7 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 border border-primary rounded-lg p-3">
+            <div className="flex items-start space-x-4 rounded-xl border-1 border-primary p-3">
               <div className="p-3 rounded-full bg-primary/10">
                 <Phone className="h-6 w-6 text-primary" />
               </div>
@@ -88,7 +88,7 @@ export const Contact = () => {
                 <h4 className="font-medium">Contato</h4>
                 <a
                   href="https://wa.me/5551984793631?text=Olá%20Douglas,%20gostaria%20de%20falar%20com%20você!"
-                  className="text-muted-foreground  hover:text-primary transition-colors duration-300"
+                  className="text-muted-foreground hover:text-primary transition-colors duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -97,7 +97,7 @@ export const Contact = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-4 border border-primary rounded-lg p-3">
+            <div className="flex items-start space-x-4 rounded-xl border-1 border-primary  p-3">
               <div className="p-3 rounded-full  bg-primary/10">
                 <MapPin className="h-6 w-6 text-primary" />
               </div>
@@ -121,28 +121,28 @@ export const Contact = () => {
                 href="https://www.linkedin.com/in/douglasribeiro21"
                 target="_blank"
               >
-                <IconBrandLinkedin className="h-8 w-8 text-muted-foreground hover:text-primary transition-colors duration-300" />
+                <IconBrandLinkedin className="h-8 w-8 text-muted-foreground hover:text-blue-600 transition-colors duration-300" />
               </a>
               <a
                 href="https://www.instagram.com/douglas_ribeiro_21/"
                 target="_blank"
               >
-                <IconBrandInstagram className="h-8 w-8 text-muted-foreground hover:text-primary transition-colors duration-300" />
+                <IconBrandInstagram className="h-8 w-8 text-muted-foreground hover:text-pink-500 transition-colors duration-300" />
               </a>
               <a
                 href="https://www.facebook.com/douglas.ribeiro.853028"
                 target="_blank"
               >
-                <IconBrandFacebook className="h-8 w-8 text-muted-foreground hover:text-primary transition-colors duration-300" />
+                <IconBrandFacebook className="h-8 w-8 text-muted-foreground hover:text-blue-500 transition-colors duration-300" />
               </a>
               <a href="" target="_blank">
-                <IconBrandYoutube className="h-8 w-8 text-muted-foreground hover:text-primary transition-colors duration-300" />
+                <IconBrandYoutube className="h-8 w-8 text-muted-foreground hover:text-red-500 transition-colors duration-300" />
               </a>
             </div>
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-gray-700 p-8 shadow-[0_0_10px_#e76f51] rounded-lg ">
+        <div className="bg-gradient-to-br from-gray-700 p-8 shadow-[0_0_10px_#bd2600] rounded-lg ">
           <h3 className="text-2xl font-semibold mb-6">Enviar Mensagem</h3>
           <form className="space-y-6 text-left" onSubmit={handleSubmit}>
             <div>
@@ -197,7 +197,7 @@ export const Contact = () => {
               type="submit"
               disabled={isSubmitting}
               className={cn(
-                "cosmic-btn w-full flex hover:bg-primary/90 transition-all duration-400 items-center justify-center gap-2"
+                "cosmic-btn w-full flex hover:bg-primary/90 img-effect transition-all duration-400 items-center justify-center gap-2"
               )}
             >
               {isSubmitting ? "Enviando..." : "Enviar Mensagem"}
