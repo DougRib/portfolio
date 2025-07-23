@@ -1,10 +1,9 @@
-import { ArrowDown } from "lucide-react";
 
 export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[100dvh] flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-center px-4 "
+      className="relative min-h-[100dvh] pt-10 flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-center px-4 "
     >
       <div className="container max-w-4xl mx-auto text-center px-4 z-10">
         <div className="flex flex-col items-center ">
@@ -28,17 +27,14 @@ export const HeroSection = () => {
             Descubra meus projetos, habilidades, jornada em desenvolvimento web
             fullstack e análise de dados.
           </p>
-          <div className="flex justify-center space-x-4 opacity-0 animate-fade-in-delay-4">
+          <div className="relative flex justify-center space-x-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-btn img-effect">
               View My Projects
             </a>
           </div>
         </div>
       </div>
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
-        <span className="text-sm text-muted-foreground mb-2">Scroll</span>
-        <ArrowDown className="h-6 w-6 text-primary" />
-      </div>
+
     </section>
   );
 };

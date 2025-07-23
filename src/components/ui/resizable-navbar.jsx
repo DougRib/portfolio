@@ -182,9 +182,9 @@ export const MobileNavMenu = ({ children, className, isOpen, onClose }) => {
 
 export const MobileNavToggle = ({ isOpen, onClick }) => {
   return isOpen ? (
-    <IconX className="text-primary dark:text-white" onClick={onClick} />
+    <IconX className="text-primary dark:text-primary" onClick={onClick} />
   ) : (
-    <IconMenu2 className="text-primary mr-3 dark:text-white" onClick={onClick} />
+    <IconMenu2 className="text-primary mr-3 dark:text-primary" onClick={onClick} />
   );
 };
 
