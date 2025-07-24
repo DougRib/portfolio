@@ -29,7 +29,7 @@ export const HeroSection = () => {
           </p>
           <div className="relative flex justify-center space-x-4 opacity-0 animate-fade-in-delay-4">
             <a href="#projects" className="cosmic-btn img-effect">
-              View My Projects
+              Ver meus projetos
             </a>
           </div>
         </div>

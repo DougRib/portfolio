@@ -38,7 +38,7 @@ export const Projects = () => {
     <section id="projects" className="relative py-24 px-4">
       <div className=" mx-auto max-w-5xl">
         <h2 className="text-3xl p-5 md:text-4xl gradient-text bg-clip-text text-transparent mb-5 text-center opacity-0 animate-fade-in-delay-1">
-          My Projects
+          Meus Projetos
         </h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-center mb-12 opacity-0 animate-fade-in-delay-2">
           Nesta seção apresento alguns dos projetos que desenvolvi, aplicando na
@@ -104,7 +104,7 @@ export const Projects = () => {
             target="_blank"
             className="cosmic-btn img-effect w-fit flex transition-all duration-400 items-center mx-auto gap-2"
           >
-            View More on GitHub
+            Ver mais em GitHub
             <IconArrowAutofitRight size={25} />
           </a>
         </div>

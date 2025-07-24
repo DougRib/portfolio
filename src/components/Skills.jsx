@@ -6,34 +6,30 @@ const skills = [
   { name: "HTML", icon: "/svg/html.svg", category: "frontend" },
   { name: "React", icon: "/svg/react-dark.svg", category: "frontend" },
   { name: "TypeScript", icon: "/svg/ts.svg", category: "frontend" },
-  {
-    name: "Tailwind Css",
-    icon: "/svg/tailwindcss-dark.svg",
-    category: "frontend",
-  },
+  { name: "Tailwind Css", icon: "/svg/tailwindcss-dark.svg", category: "frontend" },
   { name: "Next.js", icon: "/svg/nextjs-dark.svg", category: "frontend" },
 
   { name: "Node.js", icon: "/svg/nodejs-dark.svg", category: "backend" },
   { name: "Python", icon: "/svg/python-dark.svg", category: "backend" },
 
-  { name: "Git/GitHub", icon: "/svg/github.svg", category: "tolls" },
-  { name: "Docker", icon: "/svg/docker.svg", category: "tolls" },
-  { name: "VsCode", icon: "/svg/vscode-dark.svg", category: "tolls" },
+  { name: "Git/GitHub", icon: "/svg/github.svg", category: "ferramentas" },
+  { name: "Docker", icon: "/svg/docker.svg", category: "ferramentas" },
+  { name: "VsCode", icon: "/svg/vscode-dark.svg", category: "ferramentas" },
 ];
 
-const categories = ["all", "frontend", "backend", "tolls"];
+const categories = ["todas", "frontend", "backend", "ferramentas"];
 
 export const Skills = () => {
-  const [activeCategory, setIsCategory] = useState("all");
+  const [activeCategory, setIsCategory] = useState("todas");
   const filteredSkills = skills.filter(
-    (skill) => activeCategory === "all" || skill.category === activeCategory
+    (skill) => activeCategory === "todas" || skill.category === activeCategory
   );
 
   return (
     <section id="skills" className="relative py-24 bg-secondary/30">
       <div className="container mx-auto  w-full  max-w-2xl">
         <h2 className="text-3xl p-5 md:text-4xl gradient-text bg-clip-text text-transparent mb-5 text-center opacity-0 animate-fade-in-delay-1">
-          My Skills
+          Minhas Habilidades
         </h2>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12 opacity-0 animate-fade-in-delay-2">
