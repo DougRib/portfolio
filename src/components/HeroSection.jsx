@@ -14,7 +14,7 @@ export const HeroSection = () => {
           />
         </div>
         <div className="space-y-6 bg-opacity-50 p-4 rounded-lg ">
-          <h1 className="text-4xl pb-3 md:text-7xl font-light mb-4 tracking-tight flex flex-wrap gradient-text bg-clip-text text-transparent animate-fade-in justify-center break-words">
+          <h1 className="text-4xl pb-3 md:text-7xl font-bold mb-4 tracking-tight flex flex-wrap gradient-text bg-clip-text text-transparent animate-fade-in justify-center break-words">
             Douglas Ribeiro
           </h1>
           <h3 className="text-2xl md:text-4xl font-light mx-auto mb-1 tracking-tight flex flex-wrap gradient-text bg-clip-text text-transparent justify-center break-words opacity-0 animate-fade-in-delay-3">
