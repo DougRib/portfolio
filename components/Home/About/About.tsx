@@ -6,9 +6,9 @@ import { FaCheck } from 'react-icons/fa'
 
 const About = () => {
   return (
-    <div className="pt-16 pb-16 bg-[#202224]">
+    <div className="pt-16 pb-16">
       <SectionHeading>About Me</SectionHeading>
-      <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-1 gap-8 items-center mt-20">
+      <div className="w-[80%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mt-20">
         <div data-aos="fade-left" data-aos-anchor-placement="top-center" >
           <h1 className="text-bg text-[26px] sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-200">
             {AboutInfo.title}

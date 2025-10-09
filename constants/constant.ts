@@ -19,9 +19,4 @@ export  const navLinks = [
         url: "#contact",
         label: "Contact"
     },
-    {
-        id: 5,
-        url: "#blog",
-        label: "Blog"
-    },
 ]

@@ -40,38 +40,35 @@ const Nav = ({openNav}: NavProps) => {
         <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
             {/*LOGO*/}
             <Image 
-                src="/logo (2).png"  
+                src="/images/logo.png"  
                 alt="logo" 
-                width={170} 
-                height={170}
+                width={140} 
+                height={140}
                 className="ml-[-1.5rem] sm:ml-0" 
             />
+            
             {/*NAV LINKS*/}
             <div className="flex items-center space-x-10">
                 <div className="hidden lg:flex items-center space-x-8">
+                <ModeToggle />
                     {navLinks.map((navLinks) => {
                         return  (
                             <Link key={navLinks.id} href={navLinks.url}>
-                                    <p className='nav__link'>{navLinks.label}</p>
-                                </Link>
+                                <p className='nav__link'>{navLinks.label}</p>
+                            </Link>
                         )
                     })};
                 </div>
                 {/*BUTTON*/}
-                <div className="flex items-center space-x-4">
-                    <ModeToggle />
-
-
+                <div className="flex items-center justify-center space-x-4">
                     <a href="#">
-                        <MagicButton 
+                        <MagicButton
+                            className=" md:px-8 md:py-3 hover:bg-gray-900 text-black font-semibold sm:text-base text-sm transition-all duration-200 rounded-lg"                       
                             title="Me Contratar"
                             icon={<FaHandshake />}
                             position="right"
                         />
                     </a>
-                    <button className="md:px-10 md:py-3 px-8 text-black font-semibold sm:text-base text-sm bg-[#c9a227] hover:bg-yellow-600 transition-all duration-200 rounded-lg">
-                        Me Contratar
-                    </button>
                     {/*MENU BURGER*/}
                     <HiBars3BottomRight 
                         onClick={openNav}
@@ -85,4 +82,4 @@ const Nav = ({openNav}: NavProps) => {
   )
 }
 
-export default Nav
+export default Nav;

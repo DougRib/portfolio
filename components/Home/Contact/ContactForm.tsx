@@ -4,10 +4,10 @@ const ContactForm = () => {
   return (
     <div className="bg-[#140c1c] rounded-lg p-4 sm:p-10">
         <h1 className="text-bg text-2xl md:text-3xl lg:text-[2.5rem] font-bold">
-            vamos trabalhar
+            Vamos trabalhar!!
         </h1>
         <p className="text-gray-300 mt-3 lg:text-base text-xs md:text-sm">
-            envie-me um email com suas informações e eu irei responder o mais breve possível
+            Envie-me um email com suas informações e eu irei responder o mais breve possível
         </p>
         <form className="mt-8 block w-full overflow-hidden">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
@@ -25,7 +25,7 @@ const ContactForm = () => {
             <div className="flex mt-5 flex-col md:flex-row items-center justify-between gap-4">
                 <input 
                     type="email"
-                    placeholder="E-mail q"
+                    placeholder="E-mail"
                     className="flex-1 bg-black text-white placeholder:text-gray-500 px-6 py-3 rounded-md border-[1.5px] border-gray-300 border-opacity-15 outline-none w-full" 
                 />
                 <input 

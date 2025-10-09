@@ -2,7 +2,7 @@ export const BaseInfo = {
     name: "Douglas",
     title: "Full Stack Developer",
     description: "I'm a passionate software engineer with a strong background in JavaScript and TypeScript. I love building clean and maintainable code, and I'm always eager to learn new technologies and techniques.",
-    profile:"/images/20231012_114511.jpg"
+    profile: "/images/imagem.jpg"
 };
 
 export const AboutInfo = {

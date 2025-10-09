@@ -1,3 +1,4 @@
+import MagicButton from '@/components/ui/MagicButton'
 import { BaseInfo } from '@/Data/data'
 import Image from 'next/image'
 import React from 'react'
@@ -5,8 +6,8 @@ import { FaDownload } from "react-icons/fa"
 
 const Hero = () => {
   return (
-    <div className='w-full pt-[4vh] md:pt-[12vh] h-screen bg-[#2a2929] overflow-hidden relative'>
-        <div className="flex justify-center flex-col w-4/5 h-full mx:auto">
+    <div className='w-full pt-[4vh] md:pt-[12vh] h-screen items-center overflow-hidden relative'>
+        <div className="flex justify-center flex-col w-4/5 h-full mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
                 {/*TEXT*/}
                 <div>
@@ -27,26 +28,30 @@ const Hero = () => {
                     >
                         {BaseInfo.description}
                     </p>
-                    <button
-                        data-aos="zoom-in" 
-                        data-aos-delay="300" 
-                        className="md:px-8 md:py-2.5 px-6 py-1.5 text-black button-rotate  font-semibold text-sm md:text-lg transition-all duration-200 rounded-lg mt-8 bg-[#efc12b] hover:bg-yellow-600 flex items-center space-x-2"
-                    >
-                        <span>Download CV</span>
-                        <FaDownload />
-                    </button>
+                    
+                    <a href="#">
+                        <MagicButton
+                            data-aos="zoom-in" 
+                            data-aos-delay="300" 
+                            className=" md:px-8 md:py-2.5 pb-10 text-black font-semibold sm:text-base text-sm transition-all duration-200 hover:bg-gray-900 rounded-lg"                       
+                            title="Download CV"
+                            icon={<FaDownload />}
+                            position="left"
+                        />
+                    </a>
                 </div>
                 {/*IMAGE*/}
                 <div 
                     data-aos="zoom-in" 
                     data-aos-delay="400"                 
-                    className="mx-auto hidden lg:block rounded-[3rem] border-[3.5] border-yellow-400 overflow-x-hidden"
+                    className="mx-auto hidden lg:block rounded-[3rem] border-[3.5]  border-yellow-400 overflow-x-hidden"
                 >
                     <Image 
                         src={BaseInfo.profile}
                         alt={BaseInfo.name}
-                        width={500}
-                        height={500}
+                        width={340}
+                        height={340}
+                        priority
                     />
                 </div>
             </div>

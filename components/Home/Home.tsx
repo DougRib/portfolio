@@ -8,6 +8,7 @@ import Skills from './Skills/Skills'
 import Contact from './Contact/Contact'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Spotlight } from '../ui/Spolight'
 
 const Home = () => {
   useEffect(() => {
@@ -25,7 +26,8 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
+        <Spotlight />
         <Hero />
         <About />
         <Project />

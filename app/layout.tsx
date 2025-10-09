@@ -32,12 +32,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <ResponsiveNav />
           {children}
+          <Footer />
+          <ScrollToTop />
         </ThemeProvider>
-        <ResponsiveNav />
-        {children}
-        <Footer />
-        <ScrollToTop />
       </body>
     </html>
   );
