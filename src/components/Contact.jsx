@@ -124,7 +124,7 @@ export const Contact = () => {
                 <IconBrandLinkedin className="h-8 w-8 text-muted-foreground hover:text-blue-600 transition-colors duration-300" />
               </a>
               <a
-                href="https://www.instagram.com/douglas_ribeiro_21/"
+                href="https://www.instagram.com/odev.douglas/"
                 target="_blank"
               >
                 <IconBrandInstagram className="h-8 w-8 text-muted-foreground hover:text-pink-500 transition-colors duration-300" />

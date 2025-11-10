@@ -8,9 +8,9 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center px-4 z-10">
         <div className="flex flex-col items-center ">
           <img
-            src="/projects/dr.jpg"
+            src="/projects/dr2.png"
             alt="Douglas Ribeiro"
-            className="w-[200px] cursor-pointer mx-auto rounded-full shadow-lg shadow-primary/60 transition-all duration-300 hover:-translate-y-1 hover:scale-101 hover:shadow-2xl hover:shadow-primary/60 md:w-[230px] opacity-0 animate-fade-in-delay-2"
+            className="w-[250px] cursor-pointer mx-auto rounded-full shadow-lg shadow-primary/60 transition-all duration-300 hover:-translate-y-1 hover:scale-101 hover:shadow-2xl hover:shadow-primary/60 md:w-[230px] opacity-0 animate-fade-in-delay-2"
           />
         </div>
         <div className="space-y-6 bg-opacity-50 p-4 rounded-lg ">

@@ -3,23 +3,23 @@ import { IconArrowAutofitRight, IconBrandGithub, IconExternalLink } from "@table
 const projects = [
   {
     id: 1,
-    title: "Portfolio Website",
+    title: "Portfolio Fotógrafo",
     description:
-      "A personal portfolio website to showcase my projects and skills, built with modern web technologies.",
+      "Portfólio para Fotógrafo com tela de dashboard para configuração do site, seções, serviços, contato, um site completo e moderno.",
     image: "/projects/pexels-pixabay-356056.jpg",
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["Typescript", "TailwindCSS", "React", "Next.js", "Prisma"],
     link: "#",
-    github: "#",
+    github: "https://github.com/DougRib/fotografo-portfolio",
   },
   {
     id: 2,
-    title: "E-commerce Platform",
+    title: "Análise de Dados em Python",
     description:
-      "A full-stack e-commerce application with user authentication and payment integration.",
+      "Exploração de dados usando Python, com foco em limpeza, transformação e geração de insights iniciais. Organização de métricas usando planilhas evisualizações simples.",
     image: "/projects/pexels-cookiecutter-1148820.jpg",
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["Python", "Pandas", "Matplotlib", "Seaborn"],
     link: "#",
-    github: "#",
+    github: "https://github.com/DougRib/desafio_alura_data_science",
   },
   {
     id: 3,
@@ -81,13 +81,13 @@ export const Projects = () => {
                     <a
                       href={project.link}
                       target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      className="text-foreground/80 hover:text-blue-600 transition-colors duration-300"
                     >
                       <IconExternalLink size={25} />
                     </a>
                     <a
                       href={project.github}
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      className="text-foreground/80 hover:text-purple-600 transition-colors duration-300"
                     >
                       <IconBrandGithub size={25} />
                     </a>
