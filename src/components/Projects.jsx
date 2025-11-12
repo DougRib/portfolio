@@ -6,7 +6,7 @@ const projects = [
     title: "Portfolio Fotógrafo",
     description:
       "Portfólio para Fotógrafo com tela de dashboard para configuração do site, seções, serviços, contato, um site completo e moderno.",
-    image: "/projects/pexels-pixabay-356056.jpg",
+    image: "/projects/fotografo.png",
     tags: ["Typescript", "TailwindCSS", "React", "Next.js", "Prisma"],
     link: "#",
     github: "https://github.com/DougRib/fotografo-portfolio",
@@ -16,7 +16,7 @@ const projects = [
     title: "Análise de Dados em Python",
     description:
       "Exploração de dados usando Python, com foco em limpeza, transformação e geração de insights iniciais. Organização de métricas usando planilhas evisualizações simples.",
-    image: "/projects/pexels-cookiecutter-1148820.jpg",
+    image: "/projects/analise.jpg",
     tags: ["Python", "Pandas", "Matplotlib", "Seaborn"],
     link: "#",
     github: "https://github.com/DougRib/desafio_alura_data_science",
@@ -58,15 +58,15 @@ export const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="rounded-xl  "
+                  className="rounded-xl  w-full h-48"
                 />
               </div>
-              <div className="p-6 text-center justify-center">
+              <div className="p-4 text-center justify-center">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-4">
+                <div className="flex flex-wrap mb-4">
                   {project.tags.map((tag, index) => (
                     <span
                       key={index}
