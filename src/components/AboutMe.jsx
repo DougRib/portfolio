@@ -39,8 +39,8 @@ export const AboutMe = () => {
                 Contate-me
               </a>
               <a
-                href="/DOUGLAS RIBEIRO.pdf"
-                download="Currículo DOUGLAS RIBEIRO.pdf"
+                href="/Curriculo_Douglas_Ribeiro.pdf"
+                download="Curriculo_Douglas_Ribeiro.pdf"
                 className="img-effect px-6 py-2 text-primary border border-primary rounded-full shadow-lg hover:bg-secondary/90 hover:scale-105 active:scale-95 transition-all duration-400"
               >
                 Download CV

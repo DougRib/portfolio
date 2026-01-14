@@ -60,6 +60,15 @@
       opacity: 0;
     }
   }
+  @keyframes neon-glow-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
 }
 
 @layer base {
@@ -181,6 +190,45 @@
 }
 
 @layer utility {
+  .neon-glow-group {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    isolation: isolate;
+  }
+  .neon-photo-glow {
+    position: absolute;
+    inset: -15px;
+    border-radius: 9999px;
+    background:
+      radial-gradient(
+        circle at 32% 28%,
+        rgba(84, 155, 255, 0.95) 0%,
+        rgba(97, 198, 255, 0.6) 38%,
+        rgba(245, 245, 245, 245) 58%,
+        rgba(28, 46, 90, 0) 72%
+      ),
+      conic-gradient(
+        from 0deg,
+        rgba(70, 140, 255, 0.55),
+        rgba(110, 210, 255, 0.25) 120deg,
+        rgba(70, 140, 255, 0.5) 240deg,
+        rgba(140, 255, 215, 0.35) 320deg,
+        rgba(70, 140, 255, 0.55) 360deg
+      );
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.85;
+    filter: blur(16px);
+    box-shadow: 0 0 22px rgba(70, 140, 255, 0.35);
+    transform-origin: center;
+    animation: neon-glow-spin 10s linear infinite;
+  }
+  .neon-glow-group:hover .neon-photo-glow {
+    animation-play-state: paused;
+  }
+
   .img-effect {
     position: relative;
     overflow: hidden;

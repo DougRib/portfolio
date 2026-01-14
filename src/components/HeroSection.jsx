@@ -6,12 +6,15 @@ export const HeroSection = () => {
       className="relative min-h-[100dvh] pt-10 flex flex-col items-center justify-center bg-hero-pattern bg-cover bg-center px-4 "
     >
       <div className="container max-w-4xl mx-auto text-center px-4 z-10">
-        <div className="flex flex-col items-center ">
-          <img
-            src="/projects/dr2.png"
-            alt="Douglas Ribeiro"
-            className="w-[250px] cursor-pointer mx-auto rounded-full shadow-lg shadow-primary/60 transition-all duration-300 hover:-translate-y-1 hover:scale-101 hover:shadow-2xl hover:shadow-primary/60 md:w-[230px] opacity-0 animate-fade-in-delay-2"
-          />
+        <div className="flex flex-col items-center">
+          <div className="relative neon-glow-group opacity-0 animate-fade-in-delay-2">
+            <div className="neon-photo-glow" aria-hidden="true" />
+            <img
+              src="/projects/dr2.png"
+              alt="Douglas Ribeiro"
+              className="relative z-10 w-[250px] cursor-pointer mx-auto rounded-full shadow-lg shadow-primary/60 transition-all duration-300 hover:-translate-y-1 hover:scale-101 hover:shadow-2xl hover:shadow-primary/60 md:w-[230px]"
+            />
+          </div>
         </div>
         <div className="space-y-6 bg-opacity-50 p-4 rounded-lg ">
           <h1 className="text-4xl pb-3 md:text-7xl font-bold mb-4 tracking-tight flex flex-wrap gradient-text bg-clip-text text-transparent animate-fade-in justify-center break-words">

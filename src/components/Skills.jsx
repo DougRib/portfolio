@@ -15,9 +15,12 @@ const skills = [
   { name: "Git/GitHub", icon: "/svg/github.svg", category: "ferramentas" },
   { name: "Docker", icon: "/svg/docker.svg", category: "ferramentas" },
   { name: "VsCode", icon: "/svg/vscode-dark.svg", category: "ferramentas" },
+
+  { name: "SQL", icon: "/svg/sql.png", category: "Banco de Dados" },
+  { name: "PostgreSQL", icon: "/svg/postgresql.png", category: "Banco de Dados" },
 ];
 
-const categories = ["todas", "frontend", "backend", "ferramentas"];
+const categories = ["todas", "frontend", "backend", "Banco de Dados", "ferramentas"];
 
 export const Skills = () => {
   const [activeCategory, setIsCategory] = useState("todas");
